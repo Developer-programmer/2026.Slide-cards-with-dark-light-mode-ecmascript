@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Slider</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <button type="button" class="mode-toggle" aria-label="Toggle light/dark mode" title="Toggle mode">
+    <span class="mode-toggle-icon mode-toggle-icon--sun" aria-hidden="true">☀</span>
+    <span class="mode-toggle-icon mode-toggle-icon--moon" aria-hidden="true">🌙</span>
+  </button>
+
+  <section class="slider-section">
+    <div class="slider-container">
+      <h2 class="slider-title">Featured items</h2>
+
+      <div class="slider-wrapper">
+        <button type="button" class="slider-btn slider-btn--prev" aria-label="Previous cards">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+
+        <div class="slider-track-container">
+          <div class="slider-track">
+            <article class="card">
+              <div class="card-image card-image--coral">
+                <span class="card-number">01</span>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Design Systems</h3>
+                <p class="card-desc">Build consistent interfaces with reusable components and tokens.</p>
+                <a href="#" class="card-read-more">Read More</a>
+              </div>
+              <div class="card-photo">
+                <img src="https://picsum.photos/seed/card/64/64" width="64" height="64" alt="">
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-image card-image--sage">
+                <span class="card-number">02</span>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Motion &amp; Animation</h3>
+                <p class="card-desc">Delight users with purposeful motion and smooth transitions.</p>
+                <a href="#" class="card-read-more">Read More</a>
+              </div>
+              <div class="card-photo">
+                <img src="https://picsum.photos/seed/card/64/64" width="64" height="64" alt="">
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-image card-image--navy">
+                <span class="card-number">03</span>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Accessibility</h3>
+                <p class="card-desc">Inclusive experiences that work for everyone, everywhere.</p>
+                <a href="#" class="card-read-more">Read More</a>
+              </div>
+              <div class="card-photo">
+                <img src="https://picsum.photos/seed/card/64/64" width="64" height="64" alt="">
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-image card-image--gold">
+                <span class="card-number">04</span>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Performance</h3>
+                <p class="card-desc">Fast load times and smooth interactions that scale.</p>
+                <a href="#" class="card-read-more">Read More</a>
+              </div>
+              <div class="card-photo">
+                <img src="https://picsum.photos/seed/card/64/64" width="64" height="64" alt="">
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-image card-image--coral">
+                <span class="card-number">05</span>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Responsive Layout</h3>
+                <p class="card-desc">Adaptive designs that feel native on every device.</p>
+                <a href="#" class="card-read-more">Read More</a>
+              </div>
+              <div class="card-photo">
+                <img src="https://picsum.photos/seed/card/64/64" width="64" height="64" alt="">
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-image card-image--navy">
+                <span class="card-number">06</span>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Typography</h3>
+                <p class="card-desc">Clear hierarchy and readable type across all screens.</p>
+                <a href="#" class="card-read-more">Read More</a>
+              </div>
+              <div class="card-photo">
+                <img src="https://picsum.photos/seed/card/64/64" width="64" height="64" alt="">
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-image card-image--gold">
+                <span class="card-number">07</span>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Color Theory</h3>
+                <p class="card-desc">Palettes that support contrast, branding, and mood.</p>
+                <a href="#" class="card-read-more">Read More</a>
+              </div>
+              <div class="card-photo">
+                <img src="https://picsum.photos/seed/card/64/64" width="64" height="64" alt="">
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-image card-image--sage">
+                <span class="card-number">08</span>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Iconography</h3>
+                <p class="card-desc">Consistent symbols that guide and clarify actions.</p>
+                <a href="#" class="card-read-more">Read More</a>
+              </div>
+              <div class="card-photo">
+                <img src="https://picsum.photos/seed/card/64/64" width="64" height="64" alt="">
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <button type="button" class="slider-btn slider-btn--next" aria-label="Next cards">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="slider-dots" role="tablist" aria-label="Slide navigation"></div>
+    </div>
+  </section>
+
+  <section class="slider-section">
+    <div class="slider-container">
+      <h2 class="slider-title">Popular picks</h2>
+
+      <div class="slider-wrapper">
+        <button type="button" class="slider-btn slider-btn--prev" aria-label="Previous cards">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+
+        <div class="slider-track-container">
+          <div class="slider-track">
+            <article class="card">
+              <div class="card-image card-image--sage">
+                <span class="card-number">01</span>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">User Research</h3>
+                <p class="card-desc">Understand your audience with interviews, surveys, and testing.</p>
+                <a href="#" class="card-read-more">Read More</a>
+              </div>
+              <div class="card-photo">
+                <img src="https://picsum.photos/seed/card/64/64" width="64" height="64" alt="">
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-image card-image--navy">
+                <span class="card-number">02</span>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Prototyping</h3>
+                <p class="card-desc">Iterate quickly with interactive mockups and feedback loops.</p>
+                <a href="#" class="card-read-more">Read More</a>
+              </div>
+              <div class="card-photo">
+                <img src="https://picsum.photos/seed/card/64/64" width="64" height="64" alt="">
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-image card-image--gold">
+                <span class="card-number">03</span>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Visual Design</h3>
+                <p class="card-desc">Craft pixel-perfect layouts with typography and color systems.</p>
+                <a href="#" class="card-read-more">Read More</a>
+              </div>
+              <div class="card-photo">
+                <img src="https://picsum.photos/seed/card/64/64" width="64" height="64" alt="">
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-image card-image--coral">
+                <span class="card-number">04</span>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Front-End Dev</h3>
+                <p class="card-desc">Turn designs into fast, accessible, and maintainable code.</p>
+                <a href="#" class="card-read-more">Read More</a>
+              </div>
+              <div class="card-photo">
+                <img src="https://picsum.photos/seed/card/64/64" width="64" height="64" alt="">
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-image card-image--sage">
+                <span class="card-number">05</span>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Design Ops</h3>
+                <p class="card-desc">Scale quality with components, documentation, and workflows.</p>
+                <a href="#" class="card-read-more">Read More</a>
+              </div>
+              <div class="card-photo">
+                <img src="https://picsum.photos/seed/card/64/64" width="64" height="64" alt="">
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-image card-image--coral">
+                <span class="card-number">06</span>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Usability Testing</h3>
+                <p class="card-desc">Validate decisions with real users and measurable outcomes.</p>
+                <a href="#" class="card-read-more">Read More</a>
+              </div>
+              <div class="card-photo">
+                <img src="https://picsum.photos/seed/card/64/64" width="64" height="64" alt="">
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-image card-image--navy">
+                <span class="card-number">07</span>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Design Tokens</h3>
+                <p class="card-desc">Single source of truth for spacing, color, and type.</p>
+                <a href="#" class="card-read-more">Read More</a>
+              </div>
+              <div class="card-photo">
+                <img src="https://picsum.photos/seed/card/64/64" width="64" height="64" alt="">
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-image card-image--gold">
+                <span class="card-number">08</span>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Collaboration</h3>
+                <p class="card-desc">Handoff and feedback tools that keep teams in sync.</p>
+                <a href="#" class="card-read-more">Read More</a>
+              </div>
+              <div class="card-photo">
+                <img src="https://picsum.photos/seed/card/64/64" width="64" height="64" alt="">
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <button type="button" class="slider-btn slider-btn--next" aria-label="Next cards">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="slider-dots" role="tablist" aria-label="Slide navigation"></div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
